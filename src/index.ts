@@ -2,7 +2,8 @@ console.log("hello world");
 let age: number = 20;
 console.log(age);
 
-enum Size {
+// define enums with const to generate more optimized code
+const enum Size {
   Small = "s",
   Medium = "m",
   Large = "l",
