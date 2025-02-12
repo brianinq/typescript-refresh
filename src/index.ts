@@ -59,3 +59,11 @@ let quantity: Quantity = 100;
 
 // nullish coaelscing opperator ??
 // || vs ?? given what js considers falsy including 0 & "" || takes the value to the right while ?? only does this for null and undefined values
+
+//type assertion
+// as doesnt do type conversion
+let phone = document.getElementById("phone") as HTMLInputElement;
+
+let phone2 = <HTMLInputElement>document.getElementById("phone");
+
+// never type, unknown type
