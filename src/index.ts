@@ -13,7 +13,7 @@ console.log(mySize);
 
 type Employee = {
   readonly id: number;
-  name: String;
+  name: string;
   retire?: (date: Date) => void;
 };
 const employee: Employee = {
@@ -23,3 +23,10 @@ const employee: Employee = {
     console.log(date);
   },
 };
+
+// union types and type narrowing
+
+function kgToLbs(weight: number | string): number {
+  if (typeof weight === "number") return weight * 2.2;
+  return parseInt(weight) * 2.2;
+}
