@@ -10,3 +10,15 @@ const enum Size {
 }
 const mySize: Size = Size.Large;
 console.log(mySize);
+
+const employee: {
+  readonly id: number;
+  name: String;
+  retire?: (date: Date) => void;
+} = {
+  id: 1,
+  name: "Beryl",
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
