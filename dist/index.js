@@ -11,3 +11,16 @@ const employee = {
         console.log(date);
     },
 };
+function kgToLbs(weight) {
+    if (typeof weight === "number")
+        return weight * 2.2;
+    return parseInt(weight) * 2.2;
+}
+let TextBox = {
+    drag: () => {
+        console.log("draggable");
+    },
+    resize: () => {
+        console.log("resizable");
+    },
+};

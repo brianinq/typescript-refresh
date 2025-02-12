@@ -30,3 +30,24 @@ function kgToLbs(weight: number | string): number {
   if (typeof weight === "number") return weight * 2.2;
   return parseInt(weight) * 2.2;
 }
+
+//type intersection
+
+type Draggable = {
+  drag: () => void;
+};
+
+type Resizable = {
+  resize: () => void;
+};
+
+type UiWidget = Draggable & Resizable;
+
+let TextBox: UiWidget = {
+  drag: () => {
+    console.log("draggable");
+  },
+  resize: () => {
+    console.log("resizable");
+  },
+};
