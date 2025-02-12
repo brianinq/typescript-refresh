@@ -11,11 +11,12 @@ const enum Size {
 const mySize: Size = Size.Large;
 console.log(mySize);
 
-const employee: {
+type Employee = {
   readonly id: number;
   name: String;
   retire?: (date: Date) => void;
-} = {
+};
+const employee: Employee = {
   id: 1,
   name: "Beryl",
   retire: (date: Date) => {
