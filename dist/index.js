@@ -24,3 +24,6 @@ let TextBox = {
         console.log("resizable");
     },
 };
+let quantity = 100;
+let phone = document.getElementById("phone");
+let phone2 = document.getElementById("phone");
