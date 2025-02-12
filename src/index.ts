@@ -51,3 +51,11 @@ let TextBox: UiWidget = {
     console.log("resizable");
   },
 };
+
+// literal types
+
+type Quantity = 50 | 100;
+let quantity: Quantity = 100;
+
+// nullish coaelscing opperator ??
+// || vs ?? given what js considers falsy including 0 & "" || takes the value to the right while ?? only does this for null and undefined values
